@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Workshop Lesson One</string>
+    <string name="lista_pedidos">Lista de Pedidos</string>
+    <string name="pedido">Pedido</string>
+    <string name="moeda_real">R$</string>
+    <string name="limpar_pedidos">Limpar lista de pedidos</string>
+</resources>
