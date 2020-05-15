@@ -2,10 +2,15 @@ package br.fernando.workshoplessonone.ui.main
 
 interface PedidoContrato {
 
-    interface View{
+    interface View {
+
+        fun mostrarDados(pedidos: Array<Double>)
 
     }
-    interface Presenter{
+
+    interface Presenter {
+
+        fun getPedidos()
 
     }
 }
