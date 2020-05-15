@@ -15,6 +15,12 @@ class RepositorioPedido {
         1873.0
     )
 
+    /**
+     * terceiro a classe presenter entra em contato
+     * com a classe model para coletar os dados do
+     * repositorio atraves da chamada do metodo
+     * correspondente
+     */
     fun getPedidos(): Array<Double>{
         return pedidos
     }

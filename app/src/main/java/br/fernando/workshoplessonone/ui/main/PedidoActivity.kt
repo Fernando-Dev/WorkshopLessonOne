@@ -16,15 +16,26 @@ class PedidoActivity : AppCompatActivity(), PedidoContrato.View {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pedido)
 
+        /**
+         * primeiro aponta qual contexto para classe presenter
+         */
         presenter = PedidoPresenter(this)
 
         lista = findViewById(R.id.pedidos)
 
+        /**
+         * por ultimo os dados sao carregados na classe oncreate
+         */
         presenter.getPedidos()
 
 
     }
 
+    /**
+     * quinto a classe presenter manda os dados recebidos da classe model
+     * para classe view para apresentar na tela do usuario
+     *
+     */
     override fun mostrarDados(pedidos: Array<Double>) {
 
         adapter = ArrayAdapter(
